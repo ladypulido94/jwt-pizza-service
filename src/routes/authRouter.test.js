@@ -22,8 +22,8 @@ const app = express();
 app.use(express.json());
 app.use(setAuthUser);
 app.use("/api/auth", authRouter);
+// eslint-disable-next-line no-unused-vars -- Express requires four parameters to identify error middleware.
 app.use((err, req, res, next) => {
-  // eslint-disable-line no-unused-vars -- Express requires four parameters to identify error middleware.
   res.status(err.statusCode || 500).json({ message: err.message });
 });
 
