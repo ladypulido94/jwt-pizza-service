@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "jest --config src/jest.config.json",
+    "run": "cd src && node index.js",
+    "test": "jest",
     "lint": "eslint ."
   },
   "license": "MIT",

@@ -1,6 +1,6 @@
 {
   "collectCoverage": true,
-  "coverageDirectory": "../coverage",
+  "collectCoverageFrom": ["src/**/*.js", "!src/**/*.test.js"],
   "coverageReporters": ["json-summary", "text"],
   "coverageThreshold": {
     "global": {
